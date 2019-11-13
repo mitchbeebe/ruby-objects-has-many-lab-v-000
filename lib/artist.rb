@@ -12,4 +12,13 @@ class Artist
     song.artist_name = self.name
   end
   
+  def add_song_by_name(name)
+    song = Song.new
+    song.name = name
+    song.artist = self
+  end
+  
+  def self.song_count
+    
+  
 end
